@@ -1,0 +1,26 @@
+.content{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+.field{
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.output{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: thin;
+    width : 50%;
+    margin: auto;
+    padding: 20 0 20 0;
+}
+.input{
+    display: flex;
+}

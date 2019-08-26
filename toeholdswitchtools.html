@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Toehold Switch Tools</title>
+    <link rel = "stylesheet" href="./css/tools.css">
+    <script src = js/index.js></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="heading">Toehold Switch Tools</h1>
+
+        <form class="input" onchange="change()" oninput="change()">
+            <div class="field">
+                <h3>Target RNA:</h3>
+                <input type="text" id="targetrna"><br>
+                <h3>RBS:</h3>
+                <select>
+                    <option >J61100 : AAAGAGGGGACAA</option>
+                    <option >J61103 : AAAGATTAGACAA</option>
+                    <option >J61104 : AAAGAAGGGACAG</option>
+                    <option >J61105 : AAAGACATGACGT</option>
+                    <option >J61106 : AAAGATAGGAGAC</option>
+                    <option >J61107 : AAAGAAGAGACTC</option>
+                    <option >J61108 : AAAGACGAGATAT</option>
+                    <option >J61109 : AAAGACTGGAGAC</option>
+                    <option >J61110 : AAAGAGGCGAATT</option>
+                    <option >J61111 : AAAGAGGCGATAC</option>
+                    <option >J61112 : AAAGAGGTGACAT</option>
+                    <option >J61113 : AAAGAGTGGAAAA</option>
+                    <option >J61114 : AAAGATGAGAAGA</option>
+                    <option >J61115 : AAAGAAGGGATAC</option>
+                    <option >J61116 : AAAGACATGAGGC</option>
+                    <option >J61117 : AAAGACATGAGTT</option>
+                    <option >J61118 : AAAGAGACGAATC</option>
+                    <option >J61119 : AAAGATTTGATAT</option>
+                    <option >J61120 : AAAGACGCGAGAA</option>
+                    <option >J61121 : AAAGAGACGAGTC</option>
+                    <option >J61122 : AAAGAGAGGAGCC</option>
+                    <option >J61123 : AAAGAGATGACTA</option>
+                    <option >J61124 : AAAGAGCCGACAT</option>
+                    <option >J61125 : AAAGAGCCGAGTT</option>
+                    <option >J61126 : AAAGAGGTGACTC</option>
+                    <option >J61127 : AAAGAGTGGAACT</option>
+                    <option >J61128 : AAAGATAGGACTC</option>
+                    <option >J61129 : AAAGATTGGACGT</option>
+                    <option >J61130 : AAAGAAACGACAT</option>
+                    <option >J61131 : AAAGAACCGAATT</option>
+                    <option >J61132 : AAAGACAGGATTA</option>
+                    <option >J61133 : AAAGACCCGAGAC</option>
+                    <option >J61134 : AAAGACCGGAAAT</option>
+                    <option >J61135 : AAAGACCGGAGAC</option>
+                    <option >J61136 : AAAGAGCTGAGCA</option>
+                    <option >J61137 : AAAGAGTAGATCA</option>
+                    <option >J61138 : AAAGATATGAATA</option>
+                    <option >J61139 : AAAGATTAGAGTC</option>
+                    <option >BBa_J61100 : AAAGAGGGGACAA</option>
+                    <option >BBa_J61101 : AAAGACAGGACCC</option>
+                    <option >BBa_J61102 : AAAGATCCGATGT</option>
+                    <option >BBa_J61103 : AAAGATTAGACAA</option>
+                    <option >BBa_J61104 : AAAGAAGGGACAG</option>
+                    <option >BBa_J61105 : AAAGACATGACGT</option>
+                    <option >BBa_J61106 : AAAGATAGGAGAC</option>
+                    <option >BBa_J61107 : AAAGAAGAGACTC</option>
+                    <option >BBa_J61108 : AAAGACGAGATAT</option>
+                    <option >BBa_J61109 : AAAGACTGGAGAC</option>
+                    <option >BBa_J61110 : AAAGAGGCGAATT</option>
+                    <option >BBa_J61111 : AAAGAGGCGATAC</option>
+                    <option >BBa_J61112 : AAAGAGGTGACAT</option>
+                    <option >BBa_J61113 : AAAGAGTGGAAAA</option>
+                    <option >BBa_J61114 : AAAGATGAGAAGA</option>
+                    <option >BBa_J61115 : AAAGAAGGGATAC</option>
+                    <option >BBa_J61116 : AAAGACATGAGGC</option>
+                    <option >BBa_J61117 : AAAGACATGAGTT</option>
+                    <option >BBa_J61118 : AAAGAGACGAATC</option>
+                    <option >BBa_J61119 : AAAGATTTGATAT</option>
+                    <option >BBa_J61120 : AAAGACGCGAGAA</option>
+                    <option >BBa_J61121 : AAAGAGACGAGTC</option>
+                    <option >BBa_J61122 : AAAGAGAGGAGCC</option>
+                    <option >BBa_J61123 : AAAGAGATGACTA</option>
+                    <option >BBa_J61124 : AAAGAGCCGACAT</option>
+                    <option >BBa_J61125 : AAAGAGCCGAGTT</option>
+                    <option >BBa_J61126 : AAAGAGGTGACTC</option>
+                    <option >BBa_J61127 : AAAGAGTGGAACT</option>
+                    <option >BBa_J61128 : AAAGATAGGACTC</option>
+                    <option >BBa_J61129 : AAAGATTGGACGT</option>
+                    <option >BBa_J61130 : AAAGAAACGACAT</option>
+                    <option >BBa_J61131 : AAAGAACCGAATT</option>
+                    <option >BBa_J61132 : AAAGACAGGATTA</option>
+                    <option >BBa_J61133 : AAAGACCCGAGAC</option>
+                    <option >BBa_J61134 : AAAGACCGGAAAT</option>
+                    <option >BBa_J61135 : AAAGACCGGAGAC</option>
+                    <option >BBa_J61136 : AAAGAGCTGAGCA</option>
+                    <option >BBa_J61137 : AAAGAGTAGATCA</option>
+                    <option >BBa_J61138 : AAAGATATGAATA</option>
+                    <option >BBa_J61139 : AAAGATTAGAGTC</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="output">
+            <div id="error" style="display:none">Contains Invalid Sequence</div>
+            <span>Complementary Strand:</span>
+            <div id="comp"></div>
+            <span>Reverse Strand:</span>
+            <div id="rev"></div>
+            <span>Reverse Complementary Strand:</span>
+            <div id="revcomp"></div>
+        </div>
+
+    </div>
+</body>
+</html>
