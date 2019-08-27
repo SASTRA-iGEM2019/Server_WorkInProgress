@@ -1,7 +1,11 @@
 .content{
     text-align: center;
     width: 75%;
-    margin: auto;
+    padding-bottom: 20px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .field{
     text-align: center;
