@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Toehold Switch Tools</title>
-    <link rel = "stylesheet" href="./css/tools.css">
+    <link rel = "stylesheet" href="./css/index.css">
     <script src = js/index.js></script>
 </head>
 
@@ -11,10 +11,12 @@
     <div class="content">
         <h1 class="heading">Toehold Switch Tools</h1>
 
-        <form class="input" onchange="change()" oninput="change()">
-            <div class="field">
-                <h3>Target RNA:</h3>
+        <form class="field" onchange="change()" oninput="change()">
+            <div class="target">
+                <h2>Target RNA:</h2>
                 <input type="text" id="targetrna"><br>
+            </div>
+            <div class="options">
                 <h3>RBS:</h3>
                 <select>
                     <option >J61100 : AAAGAGGGGACAA</option>
@@ -96,6 +98,10 @@
                     <option >BBa_J61138 : AAAGATATGAATA</option>
                     <option >BBa_J61139 : AAAGATTAGAGTC</option>
                 </select>
+                <h3>Linker Sequence:</h3>
+                <input type="text" id="link"><br>
+                <h3>Leader Sequence:</h3>
+                <input type="checkbox" id="lead"><br>
             </div>
         </form>
 
@@ -112,6 +118,10 @@
             <div>
                 Reverse Complementary Strand :
                 <span id="revcomp"></span>
+            </div>
+            <div class="toehold">
+                Possible Toehold Switch :
+                <span id="toe"></span>
             </div>
         </div>
 

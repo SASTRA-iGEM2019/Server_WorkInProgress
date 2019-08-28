@@ -13,7 +13,6 @@ function change() {
                 obj.style.display = "block";
             }
         }
-        console.log(trna)
         rna = rna.toUpperCase().replace(/[^ACGU]/g,"")
         var revrna = rna.split("").reverse().join("");
         var b = rna.split("");
@@ -25,9 +24,18 @@ function change() {
         document.getElementById("rev").innerHTML = revrna;
         document.getElementById("comp").innerHTML = comprna;
         document.getElementById("revcomp").innerHTML = comprev;
+        calcToehold(comprev);
     }else{
         document.getElementById("rev").innerHTML = "";
         document.getElementById("comp").innerHTML = "";
         document.getElementById("revcomp").innerHTML = "";
     }
+}
+
+function calcToehold(comprna){
+    var final = "";
+    if(document.getElementById('lead').checked){
+        final += "GGG ";
+    }
+    document.getElementById('toe').innerHTML = final;
 }
