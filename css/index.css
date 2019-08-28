@@ -1,3 +1,19 @@
+.yellow{
+    color: #fcc100;
+    font-weight: bolder;
+}
+.green{
+    color: #00ff00;
+    font-weight: bolder;
+}
+.blue{
+    color: #001c70;
+    font-weight: bolder;
+}
+.lblue{
+    color: #00ff00;
+    font-weight: bolder;
+}
 .content{
     text-align: center;
     width: 100%;
@@ -14,6 +30,10 @@
     margin: auto;
     margin-bottom: 30px;
 }
+.darkg{
+    color: #1c7000;
+    font-weight: bolder;
+}
 .output{
     border-style: solid;
     border-radius: 5px;
@@ -27,14 +47,32 @@
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     height: 30px;
     margin-bottom: 20px;
 }
 .target{
     margin-bottom: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;
+    display: flex;
+    height: 28px;
+    justify-content: center;
+    align-items: baseline;
 }
 .target h2{
     margin-bottom: 15px;
     margin-top: 7px;
+}
+.inset{
+    display: flex;
+}
+.toehold{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text{
+    padding: 5px;
 }

@@ -1,10 +1,18 @@
 function change() {
     document.getElementById("error").style.display = "none";
+    document.getElementById("ls").style.display = "none";
+    var coll = document.getElementsByClassName('static');
+    for(i=0;i<coll.length;i++) {
+        coll[i].style.display = "none";
+    }
+    document.getElementById('revcompt').innerHTML = "";
+    document.getElementById('rbst').innerHTML = "";
+    document.getElementById('linker').innerHTML = "";
 
     var complementary_bases = { A:"U", C:"G", G:"C", U:"A"};
     var stop_codons = ["UAG","UAA","UGA"];
     var rna = document.getElementById('targetrna').value;
-
+    var link = document.getElementById('link').value;
     if(rna != ""){
         trna = rna.match(/.{1,3}/g);
         for(i=0;i<trna.length;i++){
@@ -24,7 +32,10 @@ function change() {
         document.getElementById("rev").innerHTML = revrna;
         document.getElementById("comp").innerHTML = comprna;
         document.getElementById("revcomp").innerHTML = comprev;
-        calcToehold(comprev);
+        for(i=0;i<coll.length;i++) {
+            coll[i].style.display = "block";
+        }
+        calcToehold(comprev,link);
     }else{
         document.getElementById("rev").innerHTML = "";
         document.getElementById("comp").innerHTML = "";
@@ -32,10 +43,11 @@ function change() {
     }
 }
 
-function calcToehold(comprna){
-    var final = "";
+function calcToehold(comprna,link){
     if(document.getElementById('lead').checked){
-        final += "GGG ";
+        document.getElementById('ls').style.display = 'block';
     }
-    document.getElementById('toe').innerHTML = final;
+    document.getElementById('revcompt').innerHTML = comprna;
+    document.getElementById('linker').innerHTML = link;
+    document.getElementById('rbst').innerHTML = document.getElementById("rbs").options[document.getElementById("rbs").selectedIndex].text.split(":")[1];
 }
